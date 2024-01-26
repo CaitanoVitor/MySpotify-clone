@@ -243,7 +243,7 @@
   grid-gap: 24px;
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
-  /* min-width: var(--min-container-width); */
+
 }
 
 .artist-card {
@@ -336,4 +336,10 @@
 
 #result-artist {
   padding: 20px 40px;
+}
+
+@media screen and (max-width: 1015px) {
+  .offer__list-item {
+    grid-template-columns: 1fr 1fr;
+  }
 }
